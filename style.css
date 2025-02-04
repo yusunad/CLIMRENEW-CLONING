@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --call-to-action: #43C35D;
+    --primary-color: #6E6E6E;
+
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    cursor: pointer;
+    overflow-y: scroll;
+
+}
+
+/*FIRST CONTAINER*/
+#firstdiv {
+    background: url(image1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 120vh;
+    animation: slidein 9s infinite;
+}
+
+/*UPPER WHITE NAV*/
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.uppernav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    width: 50rem;
+}
+
+img {
+    height: 30px;
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navlist li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navlist a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.navlist a:hover {
+
+    color: var(--call-to-action);
+}
+
+.contact-us {
+    background-color: var(--call-to-action);
+    width: 200px;
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-us:hover {
+    background-color: black;
+    color: var(--call-to-action);
+    cursor: pointer;
+}
+
+.contact-us h1 {
+    font-size: 18px;
+}
+
+
+@keyframes slidein {
+    0% {
+        background-image: url(image1.png);
+    }
+
+    33% {
+        background-image: url(image2.jpg);
+    }
+
+    66% {
+        background-image: url(image3.jpg);
+    }
+
+    100% {
+        background-image: url(image1.png);
+    }
+}
+
+.text-display-div {
+    margin-left: 180px;
+    margin-top: 200px;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.text-contact {
+    background-color: white;
+    color: #43C35D;
+    width: 180px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    border-radius: 30px;
+    font-size: larger;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+
+}
+
+.text-contact:hover {
+    background-color: black;
+    color: var(--call-to-action);
+    cursor: pointer;
+}
+
+/*SECOND CONTAINER*/
+.second-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.upper-second-container {
+    height: 300px;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+}
+
+.second-container-div {
+    background-color: var(--call-to-action);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    width: 200px;
+    min-height: 150px;
+    flex-direction: column;
+    display: flex
+}
+.second-container-div:hover {
+background-color: black;
+color:#43C35D;
+}
+
+p,
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.second-container-text p {
+    line-height: 0px;
+    font-size: 14px;
+}
+
+.second-container-text h2 {
+    line-height: 0px;
+    font-size: 14px;
+}
+
+.down-second-container {
+    border: 2px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 20rem;
+}
+
+.second-container-one {
+    width: 50%;
+    background-image: url(downimage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.second-container-two {
+    background-color: var(--call-to-action);
+    width: 50%;
+    height: 320px;
+    color:white;
+}
+.second-contain-box { 
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.learn-more-btn { 
+    margin-top: 50px;
+    background-color: white;
+    padding:20px;
+    color:var(--call-to-action);
+    border-radius: 30px;
+    width:150px;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+.learn-more-btn:hover {
+
+    color: var(--call-to-action);
+    background-color: black;
+}
+
+/*COMMUNITY CAMPAIGN SESSION*/
+
